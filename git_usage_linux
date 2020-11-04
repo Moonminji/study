@@ -1,0 +1,28 @@
+1. 리눅스나 터미널에 접속한다.
+2. git --version 을 입력 후 확인
+3. 없으면 sudo apt-get install update 로 업데이트.
+     sudo apt-get install git 으로 깃을 설치.
+    중간에 설치 동의에서 y를 눌러준 후 완료되면, git --version으로 버전이 뜨는지 확인
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. 사용자 이름 지정  git config --global user.name "사용자이름" 
+2. 이메일 지정            git config --global user.email "메일@주소.com" 
+3. 새 깃 저장소 만들기
+     개발 서버에 디렉토리 만들기 ex) git_test
+4. git init    이 디렉토리는 이제 Git 으로 모든 활동 추적됨
+5. git status 로 현재 깃 상태를 확인할 수 있음
+6. 파일 생성 ex) test.txt
+7. git add test.txt 후 git status 치면 committed 뜸
+8. git commit -m "메세지"  형식으로 커밋을 한다
+9. 깃 저장소 확인 (test.txt존재할것)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[ 로컬 저장소의 리파지토리를 http://www.github.com 에 업로드 ]
+1. 로컬과 원격 저장소 연결 ( + 연결 상태 확인) 
+     git remote add origin https://github.com/username/project.git 
+     git remote -v
+2. git push -u origin master ( 처음 푸시할 때만)
+    git push origin master
+3. error: The requested URL returned error: 403 Forbidden while accessing 에러가 뜰 때
+     git remote -v 보면  https://github.com/username/project.git 으로 되어있을 것인데
+     git remote set-url origin https://username@github.com/username/project.git 형식으로 바꿔줘야함.
+4. 그 후 2번 다시하기
+
