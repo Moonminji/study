@@ -7,4 +7,4 @@
 6. Socket 식별자 및 옵션
 7. dmesg, netstat
 8. Mutex, Semaphore (+ file lock)
-9. SSL 연결, OpenSSL
+9. SSL 연결, OpenSSL ( EVP_CIPHER_CTX .. )
