@@ -5,3 +5,4 @@
 4. Database Lock
 5. Socket 식별자 및 옵션
 6. dmesg, netstat
+7. Mutex, Semaphore (+ file lock)
