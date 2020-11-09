@@ -1,8 +1,9 @@
 [ LIST ]
 1. Linux에서 git 사용 방법
 2. CVS 사용 방법
-3. Process와 Daemon 차이점
-4. Database Lock
-5. Socket 식별자 및 옵션
-6. dmesg, netstat
-7. Mutex, Semaphore (+ file lock)
+3. Kernel (Linux Kernel)
+4. Process와 Daemon 차이점
+5. Database Lock
+6. Socket 식별자 및 옵션
+7. dmesg, netstat
+8. Mutex, Semaphore (+ file lock)
