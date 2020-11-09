@@ -1,27 +1,27 @@
-1. ¸®´ª½º³ª ÅÍ¹Ì³Î¿¡ Á¢¼ÓÇÑ´Ù.
-2. git --version À» ÀÔ·Â ÈÄ È®ÀÎ
-3. ¾øÀ¸¸é sudo apt-get install update ·Î ¾÷µ¥ÀÌÆ®.
-     sudo apt-get install git À¸·Î ±êÀ» ¼³Ä¡.
-    Áß°£¿¡ ¼³Ä¡ µ¿ÀÇ¿¡¼­ y¸¦ ´­·¯ÁØ ÈÄ ¿Ï·áµÇ¸é, git --versionÀ¸·Î ¹öÀüÀÌ ¶ß´ÂÁö È®ÀÎ
+1. ë¦¬ëˆ…ìŠ¤ë‚˜ í„°ë¯¸ë„ì— ì ‘ì†í•œë‹¤.
+2. git --version ì„ ì…ë ¥ í›„ í™•ì¸
+3. ì—†ìœ¼ë©´ sudo apt-get install update ë¡œ ì—…ë°ì´íŠ¸.
+     sudo apt-get install git ìœ¼ë¡œ ê¹ƒì„ ì„¤ì¹˜.
+    ì¤‘ê°„ì— ì„¤ì¹˜ ë™ì˜ì—ì„œ yë¥¼ ëˆŒëŸ¬ì¤€ í›„ ì™„ë£Œë˜ë©´, git --versionìœ¼ë¡œ ë²„ì „ì´ ëœ¨ëŠ”ì§€ í™•ì¸
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-1. »ç¿ëÀÚ ÀÌ¸§ ÁöÁ¤  git config --global user.name "»ç¿ëÀÚÀÌ¸§"
-2. ÀÌ¸ŞÀÏ ÁöÁ¤            git config --global user.email "¸ŞÀÏ@ÁÖ¼Ò.com"
-3. »õ ±ê ÀúÀå¼Ò ¸¸µé±â
-     °³¹ß ¼­¹ö¿¡ µğ·ºÅä¸® ¸¸µé±â ex) git_test
-4. git init    ÀÌ µğ·ºÅä¸®´Â ÀÌÁ¦ Git À¸·Î ¸ğµç È°µ¿ ÃßÀûµÊ
-5. git status ·Î ÇöÀç ±ê »óÅÂ¸¦ È®ÀÎÇÒ ¼ö ÀÖÀ½
-6. ÆÄÀÏ »ı¼º ex) test.txt
-7. git add test.txt ÈÄ git status Ä¡¸é committed ¶ä
-8. git commit -m "¸Ş¼¼Áö"  Çü½ÄÀ¸·Î Ä¿¹ÔÀ» ÇÑ´Ù
-9. ±ê ÀúÀå¼Ò È®ÀÎ (test.txtÁ¸ÀçÇÒ°Í)
+1. ì‚¬ìš©ì ì´ë¦„ ì§€ì •  git config --global user.name "ì‚¬ìš©ìì´ë¦„"
+2. ì´ë©”ì¼ ì§€ì •            git config --global user.email "ë©”ì¼@ì£¼ì†Œ.com"
+3. ìƒˆ ê¹ƒ ì €ì¥ì†Œ ë§Œë“¤ê¸°
+     ê°œë°œ ì„œë²„ì— ë””ë ‰í† ë¦¬ ë§Œë“¤ê¸° ex) git_test
+4. git init    ì´ ë””ë ‰í† ë¦¬ëŠ” ì´ì œ Git ìœ¼ë¡œ ëª¨ë“  í™œë™ ì¶”ì ë¨
+5. git status ë¡œ í˜„ì¬ ê¹ƒ ìƒíƒœë¥¼ í™•ì¸í•  ìˆ˜ ìˆìŒ
+6. íŒŒì¼ ìƒì„± ex) test.txt
+7. git add test.txt í›„ git status ì¹˜ë©´ committed ëœ¸
+8. git commit -m "ë©”ì„¸ì§€"  í˜•ì‹ìœ¼ë¡œ ì»¤ë°‹ì„ í•œë‹¤
+9. ê¹ƒ ì €ì¥ì†Œ í™•ì¸ (test.txtì¡´ì¬í• ê²ƒ)
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-[ ·ÎÄÃ ÀúÀå¼ÒÀÇ ¸®ÆÄÁöÅä¸®¸¦ http://www.github.com ¿¡ ¾÷·Îµå ]
-1. ·ÎÄÃ°ú ¿ø°İ ÀúÀå¼Ò ¿¬°á ( + ¿¬°á »óÅÂ È®ÀÎ)
+[ ë¡œì»¬ ì €ì¥ì†Œì˜ ë¦¬íŒŒì§€í† ë¦¬ë¥¼ http://www.github.com ì— ì—…ë¡œë“œ ]
+1. ë¡œì»¬ê³¼ ì›ê²© ì €ì¥ì†Œ ì—°ê²° ( + ì—°ê²° ìƒíƒœ í™•ì¸)
      git remote add origin https://github.com/username/project.git
      git remote -v
-2. git push -u origin master ( Ã³À½ Çª½ÃÇÒ ¶§¸¸)
+2. git push -u origin master ( ì²˜ìŒ í‘¸ì‹œí•  ë•Œë§Œ)
     git push origin master
-3. error: The requested URL returned error: 403 Forbidden while accessing ¿¡·¯°¡ ¶ã ¶§
-     git remote -v º¸¸é  https://github.com/username/project.git À¸·Î µÇ¾îÀÖÀ» °ÍÀÎµ¥
-     git remote set-url origin https://username@github.com/username/project.git Çü½ÄÀ¸·Î ¹Ù²ãÁà¾ßÇÔ.
-4. ±× ÈÄ 2¹ø ´Ù½ÃÇÏ±â
+3. error: The requested URL returned error: 403 Forbidden while accessing ì—ëŸ¬ê°€ ëœ° ë•Œ
+     git remote -v ë³´ë©´  https://github.com/username/project.git ìœ¼ë¡œ ë˜ì–´ìˆì„ ê²ƒì¸ë°
+     git remote set-url origin https://username@github.com/username/project.git í˜•ì‹ìœ¼ë¡œ ë°”ê¿”ì¤˜ì•¼í•¨.
+4. ê·¸ í›„ 2ë²ˆ ë‹¤ì‹œí•˜ê¸°
