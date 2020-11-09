@@ -3,3 +3,5 @@
 2. CVS 사용 방법
 3. Process와 Daemon 차이점
 4. Database Lock
+5. Socket 식별자 및 옵션
+6. dmesg, netstat
