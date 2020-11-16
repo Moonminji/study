@@ -8,3 +8,4 @@
 7. dmesg, netstat
 8. Mutex, Semaphore (+ file lock)
 9. SSL 연결, OpenSSL ( EVP_CIPHER_CTX .. )
+10. Race Condition 정의 및 회피방법
