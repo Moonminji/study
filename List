@@ -6,5 +6,12 @@
 5. Database Lock
 6. Socket 식별자 및 옵션
 7. dmesg, netstat
+<<<<<<< Updated upstream
 8. Mutex, Semaphore (+ file lock)
 9. SSL 연결, OpenSSL ( EVP_CIPHER_CTX .. )
+=======
+8. Thread, Mutex
+9. Semaphore (+ file lock)
+10. Call Stack (+ Objdump 옵션)
+
+>>>>>>> Stashed changes
