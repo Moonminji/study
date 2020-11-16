@@ -2,29 +2,20 @@
  * @file 	thread_mutex_2.c
  * @brief 	
  * @author 
- * @date 	2020ÎÖÑ 11Ïõî 13Ïùº
+ * @date 	2020.11.16
  */
 
 #include <pthread.h>
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
-<<<<<<< HEAD
+
 
 // π¬≈ÿΩ∫ ∞¥√º º±æ
 pthread_mutex_t mutex_lock;
 
 int g_count = 0;  // æ≤∑πµÂ ∞¯¿Ø¿⁄ø¯.
-
-
-=======
  
-// ÎÆ§ÌÖçÏä§ Í∞ùÏ≤¥ ÏÑ†Ïñ∏
-pthread_mutex_t mutex_lock;
- 
-int g_count = 0;  // Ïì∞Î†àÎìú Í≥µÏú†ÏûêÏõê.
- 
->>>>>>> 4aaca66ee4d23303bb735dd51882eb3239cace06
 void *t_function(void *data)
 {
     int i;
@@ -33,17 +24,12 @@ void *t_function(void *data)
     pthread_mutex_lock(&mutex_lock);
 
     // critical section
-<<<<<<< HEAD
     g_count = 0;   // æ≤∑πµÂ∏∂¥Ÿ 0∫Œ≈Õ Ω√¿€.
 
-    for (i = 0; i < 5; i++)
-=======
-    g_count = 0;   // Ïì∞Î†àÎìúÎßàÎã§ 0Î∂ÄÌÑ∞ ÏãúÏûë.
-    for (i = 0; i < 3; i++)
->>>>>>> 4aaca66ee4d23303bb735dd51882eb3239cace06
+    for (i = 0; i < 5; i++) 
     {
         printf("%s COUNT %d\n", thread_name, g_count);
-        g_count++;  // Ïì∞Î†àÎìú Í≥µÏú†ÏûêÏõê
+		g_count++;
         sleep(1);
     }
 
@@ -53,7 +39,6 @@ void *t_function(void *data)
 
 int main()
 {
-<<<<<<< HEAD
 	pthread_t p_thread1, p_thread2;
 
 	// π¬≈ÿΩ∫ ∞¥√º √ ±‚»≠, ±‚∫ª ∆Øº∫¿∏∑Œ √ ±‚»≠ «ﬂ¿Ω.
@@ -68,19 +53,6 @@ int main()
 	pthread_join(p_thread2, NULL);
 
 	return 0;
-
-=======
-    pthread_t p_thread1, p_thread2;
-    int status;
-    // ÎÆ§ÌÖçÏä§ Í∞ùÏ≤¥ Ï¥àÍ∏∞Ìôî, Í∏∞Î≥∏ ÌäπÏÑ±ÏúºÎ°ú Ï¥àÍ∏∞Ìôî ÌñàÏùå
-    pthread_mutex_init(&mutex_lock, NULL);
- 
-    pthread_create(&p_thread1, NULL, t_function, (void *)"Thread1");
-    pthread_create(&p_thread2, NULL, t_function, (void *)"Thread2");
- 
-    pthread_join(p_thread1, (void *)&status);
-    pthread_join(p_thread2, (void *)&status);
->>>>>>> 4aaca66ee4d23303bb735dd51882eb3239cace06
 }
 
 
